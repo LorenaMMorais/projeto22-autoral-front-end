@@ -30,8 +30,6 @@ Esperamos que este projeto seja útil para o seu restaurante. Aproveite e desfru
 
 Divirta-se e bom apetite!
 
-Se tiver mais alguma dúvida ou precisar de ajuda adicional, estou à disposição!
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
