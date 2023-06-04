@@ -31,8 +31,6 @@ Esperamos que este projeto seja útil para o seu restaurante. Aproveite e desfru
 Divirta-se e bom apetite!
 
 Se tiver mais alguma dúvida ou precisar de ajuda adicional, estou à disposição!
-Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts. ChatGPT May 24 Version
-
 
 # Getting Started with Create React App
 
