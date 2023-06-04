@@ -1,3 +1,7 @@
+# Sabores do Pará
+
+A apliacação será um site para o restaurante "Sabores do Pará", porém terá um sistema para uso interno do restaurante para o gerenciamento de atendimento e vendas, onde os garçons poderão anotar os pedidos nas mesas e uma comanda será registrada para que os cozinheiros possam ter acesso, e por fim o caixa terá acesso a comanda onde poderão finalizar o pagamento. O sistema também contará com sistema próprio de delivery, onde os clientes poderam fazer pedidos para entrega ou pra retirada no balcão.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
