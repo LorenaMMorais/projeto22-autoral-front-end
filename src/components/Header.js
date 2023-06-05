@@ -1,8 +1,19 @@
 import styled from 'styled-components';
 import logo from '../assets/images/logo.png';
 import { Link } from 'react-scroll';
+import { useState } from 'react';
 
 export default function Header() {
+  const [showOptions, setShowOptions] = useState(false);
+
+  const handleMouseEnter = () => {
+    setShowOptions(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowOptions(false);
+  };
+
   return (
     <ContainerHeader>
       <Logo>
@@ -17,7 +28,19 @@ export default function Header() {
             <p>Cardápio</p>
           </Link>
           <Link>
-            <p>Serviços</p>
+            <p
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => setShowOptions(!showOptions)}
+            >
+              Serviços
+            </p>
+            {showOptions && (
+              <AdditionalOptions>
+                <p>Delivery</p>
+                <p>Interno</p>
+              </AdditionalOptions>
+            )}
           </Link>
           <Link to="redes-sociais" smooth={true} duration={500}>
             <p>Redes Sociais</p>
@@ -73,6 +96,29 @@ const NavBar = styled.div`
       &:hover {
         color: #FDB53C;
       }
+    }
+  }
+`;
+
+const AdditionalOptions = styled.div`
+  position: absolute;
+  z-index:1
+  top: 75px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #102B07;
+  p {
+    padding: 8px;
+    font-family: 'Oregano';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    cursor: pointer;
+    &:hover {
+      color: #FDB53C;
     }
   }
 `;
