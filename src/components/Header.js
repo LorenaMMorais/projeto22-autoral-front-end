@@ -2,9 +2,12 @@ import styled from 'styled-components';
 import logo from '../assets/images/logo.png';
 import { Link } from 'react-scroll';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
   const [showOptions, setShowOptions] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleMouseEnter = () => {
     setShowOptions(true);
@@ -16,7 +19,7 @@ export default function Header() {
 
   return (
     <ContainerHeader>
-      <Logo>
+      <Logo onClick={() => navigate('/')}>
         <img src={logo} alt="logo Sabores do Pará" />
       </Logo>
       <NavBar>
@@ -36,9 +39,11 @@ export default function Header() {
               Serviços
             </p>
             {showOptions && (
-              <AdditionalOptions>
-                <p>Delivery</p>
-                <p>Interno</p>
+              <AdditionalOptions
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave} >
+                <p onClick={() => navigate('/delivery')}>Delivery</p>
+                <p onClick={() => navigate('/interno')}>Interno</p>
               </AdditionalOptions>
             )}
           </Link>
@@ -46,7 +51,7 @@ export default function Header() {
             <p>Redes Sociais</p>
           </Link>
           <Link >
-            <p>Login</p>
+            <p onClick={() => navigate('/signup')}>Login</p>
           </Link>
         </div>
       </NavBar>
@@ -81,6 +86,7 @@ const NavBar = styled.div`
     height: 75px;
     background-color: #102B07;
     p {
+      flex-direction: column;
       background-color: #102B07;
       font-family: 'Oregano';
       font-style: normal;
@@ -101,10 +107,8 @@ const NavBar = styled.div`
 `;
 
 const AdditionalOptions = styled.div`
-  position: absolute;
-  z-index:1
-  top: 75px;
-  left: 0;
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   background-color: #102B07;
