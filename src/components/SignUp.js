@@ -23,7 +23,6 @@ export default function SignUp() {
         <ContainerForm onSubmit={submit}>
           <Input placeholder="Nome" type="name" />
           <Input placeholder="E-mail" type="text" />
-          <Input placeholder="Tipo de usuário" type="text" />
           <Input placeholder="Senha" type="password" />
           <Input placeholder="Confirme sua senha" type="password" />
           <Button type="submit">

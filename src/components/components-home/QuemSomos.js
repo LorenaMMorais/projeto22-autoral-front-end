@@ -48,7 +48,7 @@ const QuemSomos = () => {
         acolhedor e encantador, onde os clientes podem experimentar o verdadeiro sabor da amazônia.
         <br />
         <br />
-        Hoje, com o salão do restaurante ampliado, podemos atender até 30 pessoas simultaneamente. Embora seja um
+        Hoje, com o salão do restaurante ampliado, podemos atender até 50 pessoas simultaneamente. Embora seja um
         número modesto, cada cliente que entra em nosso estabelecimento é tratado com a atenção e carinho que merece.
         Valorizamos a qualidade dos nossos pratos, utilizando ingredientes frescos e selecionados, e estamos comprometidos
         com a limpeza e a higiene para garantir a satisfação de todos.

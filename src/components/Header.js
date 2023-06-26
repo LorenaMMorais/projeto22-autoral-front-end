@@ -30,7 +30,7 @@ export default function Header() {
           <Link to="cardapio" smooth={true} duration={500}>
             <p>Cardápio</p>
           </Link>
-          <Link>
+          <div>
             <p
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
@@ -46,13 +46,13 @@ export default function Header() {
                 <p onClick={() => navigate('/interno')}>Interno</p>
               </AdditionalOptions>
             )}
-          </Link>
+          </div>
           <Link to="redes-sociais" smooth={true} duration={500}>
             <p>Redes Sociais</p>
           </Link>
-          <Link >
+          <div >
             <p onClick={() => navigate('/signup')}>Login</p>
-          </Link>
+          </div>
         </div>
       </NavBar>
     </ContainerHeader>

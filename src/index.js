@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom';
 import App from './App';
 
 //import 'react-toastify/dist/ReactToastify.css';
@@ -7,7 +7,4 @@ import App from './App';
 import './assets/styles/reset.css';
 import './assets/styles/style.css';
 
-ReactDOM.render(
-  <App />,
-  document.querySelector('.root')
-);
+createRoot(document.querySelector('.root')).render(<App />);
